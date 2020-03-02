@@ -1,0 +1,92 @@
+/* typeface: Poppins */
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+:root {
+  /* Colors */
+  --page-background: #ceeaf0;
+  --card-background: #e1d1d1;
+  --card-shadow: #b28989;
+  --button-neutral-light: #efedd9;
+  --button-neutral-dark: #afa441;
+}
+
+body {
+  font-family: "Poppins", helvetica, arial, sans-serif;
+  font-size: 16px;
+  margin: 2rem;
+  background: var(--page-background);
+}
+
+h2 {
+  font-weight: 200;
+  margin-top: 0;
+}
+
+button {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 700;
+  border: none;
+  padding: 0.5rem 1rem;
+  box-shadow: 2px 2px var(--button-shadow-color);
+  background: var(--button-background-color);
+}
+
+.btn-neutral {
+  color: var(--button-neutral-dark);
+  --button-background-color: var(--button-neutral-light);
+  --button-shadow-color: var(--button-neutral-dark);
+}
+
+.puppies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: var(--card-background);
+  box-shadow: 2px 2px var(--card-shadow);
+  border-radius: 4px;
+  padding: 2rem;
+  margin: 1rem;
+  max-width: 17rem;
+}
+
+label {
+  font-size: 1rem;
+}
+
+input {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 2px 2px grey;
+}
+
+.puppy-image {
+  border: 3px solid #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  border-radius: 50%;
+  width: 17rem;
+  height: 17rem;
+}
+
+.add-puppy-card {
+  margin: auto;
+}
+
+.form-input {
+  display: grid;
+  grid-row-gap: 1rem;
+}
+
+.form-nav-buttons {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
