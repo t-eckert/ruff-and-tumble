@@ -8,6 +8,8 @@
   --card-shadow: #b28989;
   --button-neutral-light: #efedd9;
   --button-neutral-dark: #afa441;
+  --button-positive-light: #d9efdd;
+  --button-positive-dark: #64af41;
 }
 
 body {
@@ -19,7 +21,7 @@ body {
 
 h2 {
   font-weight: 200;
-  margin-top: 0;
+  margin: 0;
 }
 
 button {
@@ -38,9 +40,10 @@ button {
   --button-shadow-color: var(--button-neutral-dark);
 }
 
-.puppies {
-  display: flex;
-  flex-wrap: wrap;
+.btn-positive {
+  color: var(--button-positive-dark);
+  --button-background-color: var(--button-positive-light);
+  --button-shadow-color: var(--button-positive-dark);
 }
 
 .card {
@@ -48,8 +51,8 @@ button {
   box-shadow: 2px 2px var(--card-shadow);
   border-radius: 4px;
   padding: 2rem;
-  margin: 1rem;
-  max-width: 17rem;
+  max-width: 20rem;
+  margin: 2rem auto;
 }
 
 label {
@@ -72,6 +75,7 @@ input {
   border-radius: 50%;
   width: 17rem;
   height: 17rem;
+  margin: auto;
 }
 
 .add-puppy-card {
@@ -79,6 +83,7 @@ input {
 }
 
 .form-input {
+  margin-top: 1rem;
   display: grid;
   grid-row-gap: 1rem;
 }
